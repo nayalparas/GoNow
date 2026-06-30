@@ -33,7 +33,7 @@
       }
 
       .card {
-        max-width: 720px;
+        max-width: 760px;
         width: 100%;
         background: var(--card);
         border-radius: 20px;
@@ -46,9 +46,44 @@
         font-size: 1.9rem;
       }
 
+      h2 {
+        margin: 1.4rem 0 0.6rem;
+        font-size: 1.2rem;
+        color: var(--text);
+      }
+
       p {
         margin: 0 0 1rem;
         color: var(--muted);
+      }
+
+      ul {
+        margin: 0 0 1rem 1.2rem;
+        color: var(--muted);
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      .note {
+        font-size: 0.95rem;
+      }
+
+      .email-box {
+        background: #f8fbff;
+        border: 1px solid #dfe9f8;
+        border-left: 4px solid var(--accent);
+        border-radius: 12px;
+        padding: 1rem;
+        margin: 1rem 0 1.2rem;
+      }
+
+      .email-box pre {
+        margin: 0.6rem 0 0;
+        white-space: pre-wrap;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: var(--text);
       }
 
       a {
@@ -62,8 +97,17 @@
     <main class="page">
       <section class="card">
         <h1>User Data Policy</h1>
-        <p>This page outlines the user data policy and how data is handled within the GoNow experience.</p>
-        <p>For the full privacy details, please visit the privacy policy page.</p>
+        <p>This page outlines how user information is handled within the GoNow experience and how account deletion requests can be submitted.</p>
+
+        <h2>Delete Your Account and Data</h2>
+        <p>If you want to delete your account and associated personal data, you can send a formal request to <a href="mailto:healthbridge.main@gmail.com">healthbridge.main@gmail.com</a>.</p>
+        <ul>
+          <li>Include your full name and the email address linked to your account.</li>
+          <li>State clearly that you want your account and personal data deleted.</li>
+          <li>Optionally include your registration date or any relevant account details to help us locate your request.</li>
+        </ul>
+        <p class="note">We will review your request and take appropriate steps to remove the information in accordance with applicable privacy practices.</p>
+
         <p><a href="../">← Back to Home</a></p>
       </section>
     </main>
