@@ -3,22 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Userdata</title>
+    <title>User Data Policy</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 2rem;
-        line-height: 1.6;
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --text: #14213d;
+        --muted: #5b6474;
+        --accent: #1258d8;
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.7;
+        color: var(--text);
+        background: linear-gradient(135deg, #f7faff 0%, var(--bg) 100%);
+      }
+
+      .page {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem 1rem;
+      }
+
+      .card {
+        max-width: 720px;
+        width: 100%;
+        background: var(--card);
+        border-radius: 20px;
+        box-shadow: 0 18px 45px rgba(20, 33, 61, 0.08);
+        padding: 2rem;
+      }
+
+      h1 {
+        margin: 0 0 0.8rem;
+        font-size: 1.9rem;
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+      }
+
       a {
-        color: #0066cc;
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
-    <h1>Userdata</h1>
-    <p>This page contains demo userdata information for the static site.</p>
-    <p>It is served from its own route on GitHub Pages.</p>
-    <p><a href="../">Back to the Privacy Policy page</a></p>
+    <main class="page">
+      <section class="card">
+        <h1>User Data Policy</h1>
+        <p>This page outlines the user data policy and how data is handled within the GoNow experience.</p>
+        <p>For the full privacy details, please visit the privacy policy page.</p>
+        <p><a href="../">← Back to Home</a></p>
+      </section>
+    </main>
   </body>
 </html>

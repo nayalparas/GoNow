@@ -3,22 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy</title>
+    <title>GoNow | Welcome</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 2rem;
-        line-height: 1.6;
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --text: #14213d;
+        --muted: #5b6474;
+        --accent: #1258d8;
+        --accent-soft: #eaf2ff;
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.7;
+        color: var(--text);
+        background: linear-gradient(135deg, #f7faff 0%, var(--bg) 100%);
+      }
+
+      .page {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem 1rem;
+      }
+
+      .hero {
+        max-width: 760px;
+        background: var(--card);
+        border-radius: 24px;
+        box-shadow: 0 20px 45px rgba(20, 33, 61, 0.08);
+        padding: 2.5rem;
+        text-align: center;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        padding: 0.4rem 0.75rem;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        margin: 0 0 0.8rem;
+        font-size: 2.2rem;
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 1.02rem;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.9rem;
+        margin-top: 1.4rem;
+      }
+
       a {
-        color: #0066cc;
+        display: inline-block;
+        padding: 0.8rem 1.15rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      a:hover {
+        transform: translateY(-1px);
+      }
+
+      .primary {
+        background: var(--accent);
+        color: #fff;
+        box-shadow: 0 10px 20px rgba(18, 88, 216, 0.2);
+      }
+
+      .secondary {
+        background: #f6f9ff;
+        color: var(--accent);
+        border: 1px solid #dce7ff;
       }
     </style>
   </head>
   <body>
-    <h1>Privacy Policy</h1>
-    <p>This page contains demo privacy policy text for the static site.</p>
-    <p>It is ready to be served as a separate route on GitHub Pages.</p>
-    <p><a href="./userdata/">View the userdata page</a></p>
+    <main class="page">
+      <section class="hero">
+        <div class="eyebrow">GoNow</div>
+        <h1>Welcome to GoNow</h1>
+        <p>We are committed to delivering reliable mobility experiences with clarity, trust, and a strong focus on user privacy.</p>
+        <p>Explore our policies and learn more about how we handle information and user data.</p>
+        <div class="actions">
+          <a class="primary" href="./privacypolicy/">Read the Privacy Policy</a>
+          <a class="secondary" href="./userdata/">View the User Data Policy</a>
+        </div>
+        <p style="margin-top: 1rem;"><a href="./" style="padding: 0; color: var(--accent);">Back to Home</a></p>
+      </section>
+    </main>
   </body>
 </html>
